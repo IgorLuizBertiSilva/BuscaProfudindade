@@ -99,6 +99,7 @@ public class Grafo {
         
         Aresta aresta = new Aresta(origem, destino);
         origem.addAdj(aresta);
+        
         arestas.add(aresta);
         return aresta;
     }

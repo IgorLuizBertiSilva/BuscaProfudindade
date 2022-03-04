@@ -5,7 +5,7 @@
  */
 package buscaprofundidade.model;
 
-import com.sun.javafx.scene.control.skin.VirtualFlow;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -41,7 +41,7 @@ public class Vertice {
     
     public Vertice(String nome){
         this.nome = nome;
-        this.adj = new VirtualFlow.ArrayLinkedList<Aresta>();
+        this.adj = new ArrayList<Aresta>();
     }
     
     public void addAdj(Aresta e){
