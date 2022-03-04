@@ -17,6 +17,9 @@ public class Grafo {
     
     private List<Vertice> vertices;
     private List<Aresta> arestas;
+    
+    
+    
 
     public List<Vertice> getVertices() {
         return vertices;
@@ -104,6 +107,13 @@ public class Grafo {
         return aresta;
     }
     
+    public boolean busca(Vertice destino, Vertice Raiz){
+        if(destino.equals(Raiz)){
+            return true;
+        }else{
+            return false;
+        }
+    }
     
     
 }
